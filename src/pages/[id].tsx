@@ -24,13 +24,11 @@ const Index: NextPage<{ profile: Profile }> = ({ profile }) => {
   }
 }
 
-Index.getInitialProps = async _ctx => {
-  const id = 'dummy'
-  const res = await api.getProfile(id)
+Index.getInitialProps = async ({ query, res }) => {
+  const data = await api.getProfile(String(query.id))
+  if (!data && res) res.statusCode = 404
 
-  return {
-    profile: res,
-  }
+  return { profile: data }
 }
 
 export default Index
