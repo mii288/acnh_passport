@@ -11,6 +11,7 @@ export interface Profile {
       | 'windflowers'
     fruit: 'apple' | 'cherry' | 'orange' | 'peach' | 'pear'
     name: string
+    hemisphere: 'north' | 'south'
   }
   social: {
     discord: string | null

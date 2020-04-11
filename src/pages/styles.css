@@ -1,0 +1,43 @@
+:root {
+  /* font */
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+    "ヒラギノ角ゴ ProN W3", Meiryo, "メイリオ", sans-serif;
+
+  /* Font size */
+  --font-size-large: 18px;
+  --font-size-medium: 13px;
+  --font-size-small: 10px;
+
+  /* Line height */
+  --line-height: 1.333;
+
+  /* Color */
+  --color-black: #1c190e;
+  --color-beige-dark: #f1e4bf;
+  --color-beige-light: #f9f1e9;
+
+  --base-bg-color: var(--color-beige-dark);
+  --font-color-base: var(--color-black);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--base-bg-color);
+}
+
+html, body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-medium);
+  color: var(--font-color-base);
+  line-height: var(--line-height);
+  word-break: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: currentColor;
+}

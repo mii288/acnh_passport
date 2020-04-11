@@ -5,10 +5,11 @@ const profile: Profile = {
     flower: 'roses',
     fruit: 'peach',
     name: 'りゅうぐう',
+    hemisphere: 'north',
   },
   social: {
     discord: null,
-    instagram: null,
+    instagram: '@dummy',
     twitter: '@dummy',
   },
   user: {
@@ -17,7 +18,8 @@ const profile: Profile = {
       month: '12',
       day: '31',
     },
-    description: '',
+    description:
+      'ここに一言コメントが入ります。ここに一言コメントが入ります。ここに一言コメントが入ります。',
     friendCode: 'SW-XXXX-XXXX-XXXX',
     name: 'うらしまたろう',
     pictureUrl: '/img/dummies/user_profile.jpg',
