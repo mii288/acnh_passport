@@ -1,4 +1,4 @@
-export interface Profile {
+export interface PlayerProfile {
   land: {
     flower:
       | 'cosmoses'

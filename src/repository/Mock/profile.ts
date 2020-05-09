@@ -1,6 +1,6 @@
-import { Profile } from '../types'
+import { PlayerProfile } from '../../domain/PlayerProfile'
 
-const mock: { [id: string]: Profile } = {
+const mock: { [id: string]: PlayerProfile } = {
   1: {
     land: {
       flower: 'roses',

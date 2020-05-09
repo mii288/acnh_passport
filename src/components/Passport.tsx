@@ -2,10 +2,10 @@ import React from 'react'
 import styles from './Passport.module.css'
 import { FaInstagram, FaTwitter } from 'react-icons/fa'
 import { NextPage } from 'next'
-import { Profile } from '../api/types'
+import { PlayerProfile } from '../domain/PlayerProfile'
 import IconLand from '../assets/images/ico-land.svg'
 
-const Passport: NextPage<{ profile: Profile }> = ({ profile }) => {
+const Passport: NextPage<{ profile: PlayerProfile }> = ({ profile }) => {
   return (
     <>
       <h1 className={styles.header}>{profile.user.name}さんの自己紹介</h1>
